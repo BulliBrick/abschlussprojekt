@@ -1,8 +1,8 @@
-CREATE DATABASE IF NOT EXISTS abschlussprojekt;
+CREATE DATABASE IF NOT EXISTS abschlussarbeit;
 
-use abschlussprojekt;
+USE abschlussarbeit;
 
-CREATE TABLE members (
+CREATE TABLE IF NOT EXISTS members (
     id INT AUTO_INCREMENT,
     nachname VARCHAR(50),
     vorname VARCHAR(50),

@@ -1,7 +1,7 @@
 services:
   pythonapplikation:
     build: ./python/
-    command: sh -c "sleep 10s ; python3 ./commands.py"
+    command: sh -c "sleep 20s ; python3 ./commands.py"
     depends_on:
       mysql:
         condition: service_healthy
@@ -9,12 +9,15 @@ services:
   mysql:
     build: ./mysql/
     restart: always
+
     environment:
-      MYSQL_DATABASE: abschlussprojekt
+      MYSQL_DATABASE: abschlussarbeit
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
       MYSQL_PASSWORD:
+    ports:
+      - "3300:3306"
     healthcheck:
-      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+      test: ["CMD", "mysql", "-uroot", "-e", "SHOW DATABASES LIKE 'abschlussarbeit';"]
       interval: 10s
       timeout: 15s
       retries: 10

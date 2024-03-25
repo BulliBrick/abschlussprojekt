@@ -1,3 +1,3 @@
 FROM mysql:latest
 
-COPY ./abschlussarbeit.sql /docker-entrypoint-initdb.d/
+COPY ./abschlussprojekt.sql /docker-entrypoint-initdb.d/
