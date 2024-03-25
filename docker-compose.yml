@@ -1,0 +1,22 @@
+services:
+  pythonapplikation:
+    build: ./python/
+    command: sh -c "sleep 20s ; python3 ./commands.py"
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+  mysql:
+    build: ./mysql/
+    restart: always
+    environment:
+      MYSQL_DATABASE: abschlussprojekt
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_PASSWORD:
+    ports:
+      - "3300:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 15s
+      retries: 10
