@@ -1,7 +1,11 @@
+
+-- Erstellt die Datenbank abschlussarbeit, falls sie noch nicht existiert
 CREATE DATABASE IF NOT EXISTS abschlussarbeit;
 
+-- Wechselt in die Datenbank abschlussarbeit
 USE abschlussarbeit;
 
+-- Erstellt die Tabelle members, falls sie noch nicht existiert
 CREATE TABLE IF NOT EXISTS members (
     id INT AUTO_INCREMENT,
     nachname VARCHAR(50),
@@ -11,7 +15,7 @@ CREATE TABLE IF NOT EXISTS members (
     PRIMARY KEY (id)
 );
 
-
+-- Fügt Sample-Daten in die Tabelle members ein
 INSERT INTO members (vorname, nachname, spitzname, age) VALUES 
 ('Amsler', 'Simon', 'amsi', 17), 
 ('Schmutz', 'Seth', 'schmutzly', 17), 

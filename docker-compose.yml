@@ -13,11 +13,24 @@ services:
     environment:
       MYSQL_DATABASE: abschlussarbeit
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
-      MYSQL_PASSWORD:
+      MYSQL_ROOT_PASSWORD: root
     ports:
-      - "3300:3306"
+      - "3306:3306"
     healthcheck:
       test: ["CMD", "mysql", "-uroot", "-e", "SHOW DATABASES LIKE 'abschlussarbeit';"]
       interval: 10s
       timeout: 15s
       retries: 10
+  
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    ports:
+      - "8080:80"
+    environment:
+      PMA_HOST: mysql
+      MYSQL_ROOT_PASSWORD: root
+    depends_on:
+      mysql:
+        condition: service_healthy
+
