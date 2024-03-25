@@ -1,4 +1,4 @@
-CREATE DATABASE abschlussprojekt;
+CREATE DATABASE IF NOT EXISTS abschlussprojekt;
 
 use abschlussprojekt;
 
@@ -10,6 +10,7 @@ CREATE TABLE members (
     age INT,
     PRIMARY KEY (id)
 );
+
 
 INSERT INTO members (vorname, nachname, spitzname, age) VALUES 
 ('Amsler', 'Simon', 'amsi', 17), 
