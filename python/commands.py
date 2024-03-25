@@ -6,7 +6,7 @@ print("Connected to abschlussprojekt")
 
 cursor = connection.cursor()
 cursor.execute("SELECT * FROM members")
-members = cursor.fetchcall()
+members = cursor.fetchall()
 connection.close()
 
 print(members)
