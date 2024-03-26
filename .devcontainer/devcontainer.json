@@ -1,12 +1,7 @@
 {
     "name": "abschlussprojekt",
-    "dockerComposeFile": "../docker-compose.yml",
-    "service": "pythonapplikation",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "abschlussprojekt",
     "workspaceFolder": "/app",
-    "extensions": ["ms-python.python","ms-python.debugpy","ms-azuretools.vscode-docker"],
-    "settings": {
-        "python.pythonPath": "/usr/local/bin/python",
-        "python.linting.pylintEnabled": true,
-        "python.linting.enabled": true
-    }
+    "extensions": ["ms-python.python","ms-python.debugpy","ms-azuretools.vscode-docker"]
 }

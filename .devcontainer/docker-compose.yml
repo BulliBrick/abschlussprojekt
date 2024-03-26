@@ -1,4 +1,12 @@
 services:
+  devconatiner: 
+    image: mcr.microsoft.com/vscode/devcontainers/python:3
+    container_name: abschlussprojekt
+    volumes:
+      - .:/app
+    command: sleep infinity
+    nework_mode: service:mysql
+  
   pythonapplikation:
     build: ./python/
     command: sh -c "sleep 20s ; python3 ./commands.py"
