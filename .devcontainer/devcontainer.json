@@ -1,7 +1,7 @@
 {
     "name": "abschlussprojekt",
     "dockerComposeFile": "docker-compose.yml",
-    "service": "abschlussprojekt",
+    "service": "devcontainer",
     "workspaceFolder": "/app",
     "extensions": ["ms-python.python","ms-python.debugpy","ms-azuretools.vscode-docker"]
 }
