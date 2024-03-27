@@ -1,21 +1,22 @@
 services:
-  devconatiner: 
+  devcontainer: 
     image: mcr.microsoft.com/vscode/devcontainers/python:3
     container_name: abschlussprojekt
     command: sleep infinity
-    nework_mode: service:mysql
+    volumes:
+      - .:/workspace
+    networks:
+      - app-network
   
   pythonapplikation:
     build: ./python/
     command: sh -c "sleep 20s ; python3 ./commands.py"
-    depends_on:
-      mysql:
-        condition: service_healthy
+    networks:
+      - app-network
 
   mysql:
     build: ./mysql/
     restart: always
-
     environment:
       MYSQL_DATABASE: abschlussarbeit
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
@@ -27,6 +28,8 @@ services:
       interval: 10s
       timeout: 15s
       retries: 10
+    networks:
+      - app-network
   
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
@@ -36,7 +39,9 @@ services:
     environment:
       PMA_HOST: mysql
       MYSQL_ROOT_PASSWORD: root
-    depends_on:
-      mysql:
-        condition: service_healthy
+    networks:
+      - app-network
 
+networks:
+  app-network:
+    driver: bridge

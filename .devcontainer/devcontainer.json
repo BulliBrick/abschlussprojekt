@@ -1,6 +1,19 @@
 {
     "name": "abschlussprojekt",
-    "dockerComposeFile": "docker-compose.yml",
+    "dockerComposeFile": "../docker-compose.yml",
     "service": "devcontainer",
-    "extensions": ["ms-python.python","ms-python.debugpy","ms-azuretools.vscode-docker"]
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.debugpy",
+                "ms-azuretools.vscode-docker"
+            ]
+        }
+    },
+    "forwardPorts": [
+        3306 //mysql
+        , 8080 //phpmyadmin
+    ]
 }

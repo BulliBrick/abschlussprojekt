@@ -23,3 +23,4 @@ INSERT INTO members (vorname, nachname, spitzname, age) VALUES
 ('Seeli', 'Markus', 'markus', 35), 
 ('Akkaya', 'Cem', 'cemmy', 18),
 ('Kunz', 'Joshua', 'josh', 17);
+

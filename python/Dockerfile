@@ -12,3 +12,4 @@ COPY commands.py /app/
 
 # der Container führt das Python-Skript 'commands.py' aus
 CMD [ "python", "./commands.py" ]
+
