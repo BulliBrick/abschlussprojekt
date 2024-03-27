@@ -2,7 +2,7 @@
 FROM python:3.9
 
 # pip install den mysql-connector-python
-RUN pip install mysql-connector-python
+RUN pip install --no-cache-dir mysql-connector-python
 
 # das Verzeichnis /app wird erstellt und als Arbeitsverzeichnis festgelegt
 WORKDIR /app
