@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS members (
 );
 
 -- Fügt Sample-Daten in die Tabelle members ein
-INSERT INTO members (vorname, nachname, spitzname, age) VALUES 
+INSERT INTO members (nachname, vorname, spitzname, age) VALUES 
 ('Amsler', 'Simon', 'amsi', 17), 
 ('Schmutz', 'Seth', 'schmutzly', 17), 
 ('Topp', 'Tobias', 'tobi', 16), 
@@ -24,3 +24,4 @@ INSERT INTO members (vorname, nachname, spitzname, age) VALUES
 ('Akkaya', 'Cem', 'cemmy', 18),
 ('Kunz', 'Joshua', 'josh', 17);
 
+-- hier können SQL Statemets hinzugefügt werden. Diese werden beim kreieren ausgeführt und bestimmen so den Anfangszustand der Datenbank.COMMENT
