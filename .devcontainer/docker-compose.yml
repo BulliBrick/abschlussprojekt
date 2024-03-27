@@ -2,8 +2,6 @@ services:
   devconatiner: 
     image: mcr.microsoft.com/vscode/devcontainers/python:3
     container_name: abschlussprojekt
-    volumes:
-      - .:/app
     command: sleep infinity
     nework_mode: service:mysql
   
