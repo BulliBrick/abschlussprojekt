@@ -22,7 +22,7 @@ services:
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
       MYSQL_ROOT_PASSWORD: root
     ports:
-      - "3306:3306"
+      - "3366:3306"
     healthcheck:
       test: ["CMD", "mysql", "-uroot", "-e", "SHOW DATABASES LIKE 'abschlussarbeit';"]
       interval: 10s

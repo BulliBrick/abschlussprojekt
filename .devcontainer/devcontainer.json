@@ -13,7 +13,7 @@
         }
     },
     "forwardPorts": [
-        3306 //mysql
+        3366 //mysql
         , 8080 //phpmyadmin
     ]
 }
