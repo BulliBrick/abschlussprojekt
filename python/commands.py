@@ -1,15 +1,16 @@
+#%%
 # Importiert den MYSQL Python Connector
 import mysql.connector 
 
-
+#%%
 # Verbindet sich mit der Datenbank 'abschlussarbeit' auf dem port 3306 mit dem User 'root' und dem Passwort 'root'. Gibt aus sobald die Verbindung hergestellt wurde.
 connection = mysql.connector.connect(
     user='root', password='root', host='mysql', port="3366" , database='abschlussarbeit')
 print("Connected to abschlussarbeit")
 
-
+#%%
 # Entfehrne die '''  am Anfang und Ende um den Code zu aktivieren. Dies ist ein beispiel Eintrag in die Tabelle. Dieser Eintrag verwendet den python Mysql connector.
-
+'''
 # Erstellt einen Cursor um SQL Befehle auszuführen
 cursor = connection.cursor()
 
@@ -26,3 +27,4 @@ age = 18
 cursor.execute(sql, (vorname, nachname, spitzname, age))
 connection.commit()
 
+'''
