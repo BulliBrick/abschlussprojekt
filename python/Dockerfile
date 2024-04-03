@@ -8,8 +8,8 @@ RUN pip install --no-cache-dir mysql-connector-python
 WORKDIR /app
 
 # die Datei 'commands.py' wird in das Verzeichnis /app kopiert
-COPY commands.ipynb /app/
+COPY commands.py /app/
 
 # der Container führt das Python-Skript 'commands.py' aus
-CMD [ "python", "./commands.ipynb" ]
+CMD [ "python", "./commands.py" ]
 
