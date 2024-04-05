@@ -12,6 +12,8 @@ Navigate to "Continue Working on Local clone" and follow the instructions
 
 Now you should have a loca copy of the project 
 
+Now you need to instll the Devcontainer extension
+
 To launch it as a devcontainer you just need to click the blue Button in the bottom left corner again and navigate to "Reopen in Container"
 
 Now it will take some time to launch. 
