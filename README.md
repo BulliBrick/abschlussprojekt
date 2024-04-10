@@ -10,6 +10,8 @@ abschlussprojekt
 | Joshua Kunz | @jokulab / @jokudev | __Docker and Devcontainer Expert__ |
 | Seth Schmutz | @BrickiBulli | __Python Developer__ |
 
+
+## Setup
 Befor we start make sure you have Git and docker installed. If not install it. In the setup you dont need to change anything, just click next.
 
 
