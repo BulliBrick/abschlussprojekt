@@ -2,6 +2,16 @@ abschlussprojekt
 
 [![Open in VS Code](https://img.shields.io/badge/Open%20in-VS%20Code-blue?logo=visual-studio-code)](https://github.dev/BulliBrick/abschlussprojekt)
 
+## Contributors
+
+| Name | GitHub Account | Role |
+|-----|-----|-----|
+| Simon Amsler | @BulliBrick | __Project Lead__ / __Python Developer__ |
+| Joshua Kunz | @jokulab / @jokudev | __Docker and Devcontainer Expert__ |
+| Seth Schmutz | @BrickiBulli | __Python Developer__ |
+
+
+## Setup
 Befor we start make sure you have Git and docker installed. If not install it. In the setup you dont need to change anything, just click next.
 
 
