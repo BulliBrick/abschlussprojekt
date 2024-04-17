@@ -45,11 +45,11 @@ If you instead use the Jupyter Notebook, you have to do one extra step.
 If you press "Run" next to the first code cell it will prompt you with an install request. You can click install and after that it should work.
 If it doesnt work make sure you have a python kernel selected and have run the first cell before any other cells. 
 
-*Debug*
+# *Debug*
 
 To debug the Jupyter Notebook code hover over the arrow next to the cell you want to debug. Click on the more arrow (looks like a v ) and click "Debug cell" otherwise you an click crtl + shift + alt + enter whilst in the cell you want to debug. You can see in which cell you are by the blue outline of the cell.
 
-*Connections*
+# *Connections*
 
 *Jupyter notebook*
 Selcet a Kernel at the top right. Go to Python enviroments and select the recomended one. 
