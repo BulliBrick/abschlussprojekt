@@ -15,7 +15,7 @@ abschlussprojekt
 Befor we start make sure you have Git and docker installed. If not install it. In the setup you dont need to change anything, just click next.
 
 
-*Click the button* to open the VScode repo in the web
+*Click the button* to open the VScode repo
 
 Now it will take some time to launch. 
 
