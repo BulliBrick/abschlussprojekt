@@ -17,20 +17,6 @@ Befor we start make sure you have Git and docker installed. If not install it. I
 
 *Click the button* to open the VScode repo in the web
 
-After that click on the Icon in the bottom left corner with Github written next to it.
-
-This will open a bunch of possible options.
-
-Navigate to "Continue Working on Local clone" and follow the instructions
-
-Now you should have a local copy of the project
-
-If it prompts you to trust the project and its authors please accept it.
-
-Now you need to instll the Remote Developement extension
-
-To launch it as a devcontainer you just need to click the blue Button in the bottom left corner again and navigate to "Reopen in Container"
-
 Now it will take some time to launch. 
 
 In the meanwhile you can look around the code and you will find the contents of the Project.
