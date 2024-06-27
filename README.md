@@ -7,8 +7,7 @@ abschlussprojekt
 | Name | GitHub Account | Role |
 |-----|-----|-----|
 | Simon Amsler | @BulliBrick | __Project Lead__ / __Python Developer__ |
-| Joshua Kunz | @jokulab / @jokudev | __Docker and Devcontainer Expert__ |
-| Seth Schmutz | @BrickiBulli | __Python Developer__ |
+| Seth Schmutz | @BrickiBulli |  Good For Nothing |
 
 
 ## Setup
